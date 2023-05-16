@@ -31,7 +31,7 @@ int Matrix::get_cols() const {
 void Matrix::print() const {
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            std::cout << setw(9) << std::fixed << std::setprecision(5) << mat[i][j] << " ";
+            std::cout << setw(12) << std::fixed << std::setprecision(8) << mat[i][j] << " ";
         }
         std::cout << endl;
     }

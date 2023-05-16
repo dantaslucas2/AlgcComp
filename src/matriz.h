@@ -53,7 +53,7 @@ struct Matrix {
 
         //Task 2
         //Autovetores e Autovalores
-        void power_method(double& lambda, std::vector<double>& v, double tol, int max_iterations = 10000) const;
+        void power_method(double& lambda, std::vector<double>& v, double tol, int max_iterations = 1000000) const;
 
         void jacobi_method(std::vector<double>& eigenvalues, Matrix& eigenvectors, double tol, int max_iterations = 10000);
 };

@@ -15,7 +15,7 @@ void calculate_for_all_methods(Matrix A){
 
     double lambda; // armazenará o autovalor dominante
     vector<double> v; // armazenará o autovetor correspondente
-    double tol = 0.00001; // tolerância para o critério de parada
+    double tol = 0.0001; // tolerância para o critério de parada
     A.power_method(lambda, v, tol);
 
     cout << "Autovalor dominante: " << lambda << endl;
@@ -50,6 +50,6 @@ int main(int argc, char const *argv[])
     mat.set_element(2, 2, 2);
 
     Matrix A = load_matriz_A();
-    calculate_for_all_methods(mat);
+    calculate_for_all_methods(A);
 
 }
